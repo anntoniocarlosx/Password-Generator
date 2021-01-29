@@ -52,6 +52,20 @@ def get_password():
     # I should handle the case where num is 0, maybe display a error message, but I'm not sure about how to do this
 
 
+def save():
+    """Save the password in a txt file""" # Not a really necessary feature, but I wanted to play around with some txt files
+
+    try:
+        with open("passwords.txt", "a") as password_file:
+            print()
+            # do something
+
+    except FileNotFoundError:
+        with open("passwords.txt", "x") as password_file:
+            print()
+            # do something
+
+
 def copy_to_clipboard():
     """Copy the password to the clipboard."""
     pyperclip.copy(password.get())
