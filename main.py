@@ -51,19 +51,17 @@ def get_password():
     
     # I should handle the case where num is 0, maybe display a error message, but I'm not sure about how to do this
 
-
+    
 def save():
-    """Save the password in a txt file""" # Not a really necessary feature, but I wanted to play around with some txt files
+    """Save the password in a txt file"""
 
     try:
         with open("passwords.txt", "a") as password_file:
-            print()
-            # do something
+            password_file.write(password.get() + "\n")
 
     except FileNotFoundError:
         with open("passwords.txt", "x") as password_file:
-            print()
-            # do something
+            password_file.write(password.get() + "\n")
 
 
 def copy_to_clipboard():
