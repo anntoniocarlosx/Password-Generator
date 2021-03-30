@@ -1,5 +1,5 @@
-# Password-Generator
+# password-generator
 A simple password generator with a tkinter interface.
 
-I made this solely for learning purposes, so this might not be the best way to make this kind of program.
+This might not be the best way to dp this, but at least it works
 Any suggestions or critics would be greatly appreciated. Thanks in advance.
